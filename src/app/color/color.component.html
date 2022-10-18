@@ -1,0 +1,13 @@
+<section>
+      <h1>Color Picker</h1>
+      <div>
+        <h2>Chọn màu</h2>
+        <input type="color" name="color" id="color" (change)="onChangeColor($event)">
+      </div>
+      <div>
+        Output:
+        <div [style.background-color]="color">
+          {{color}}
+        </div>
+      </div>
+</section>
